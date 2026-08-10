@@ -1,7 +1,13 @@
 import { useTranslations } from 'next-intl';
+import { Intro } from '@/components/intro';
 
 export default function Home() {
   const t = useTranslations('home');
 
-  return <div>{t('title')}</div>;
+  return (
+    <>
+      <Intro />
+      <div>{t('title')}</div>
+    </>
+  );
 }
