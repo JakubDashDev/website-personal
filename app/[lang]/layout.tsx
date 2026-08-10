@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Host_Grotesk } from 'next/font/google';
-import { hasLocale } from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import '../globals.css';
@@ -28,7 +28,9 @@ export default async function RootLayout({ children, params }: LayoutProps<'/[la
 
   return (
     <html lang={lang} className={`${hostGrotesk.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      </body>
     </html>
   );
 }
