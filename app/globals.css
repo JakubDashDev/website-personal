@@ -1,26 +1,78 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #1d1d1d;
+  --bg-alt: #171717;
+  --bg-grad: linear-gradient(180deg, #1d1d1d, #191919);
+  --bg-stack: radial-gradient(120% 60% at 50% 40%, #232323, #1d1d1d 70%);
+  --band-light: #eae9ff;
+  --surface: #1e1e1e;
+  --surface-ring: #333333;
+  --surface-ring-hover: #444444;
+  --text: #eae9ff;
+  --text-body: #a9a9b4;
+  --text-muted: #7a7a7a;
+  --text-dim: #444444;
+  --accent: #43b1ff;
+  --accent-hover: #8ccfff;
+  --accent-deep: #1b6fa8;
+  --hairline: rgb(234 233 255 / 12%);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-alt: var(--bg-alt);
+  --color-band-light: var(--band-light);
+  --color-surface: var(--surface);
+  --color-surface-ring: var(--surface-ring);
+  --color-surface-ring-hover: var(--surface-ring-hover);
+  --color-text: var(--text);
+  --color-text-body: var(--text-body);
+  --color-text-muted: var(--text-muted);
+  --color-text-dim: var(--text-dim);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-deep: var(--accent-deep);
+  --color-hairline: var(--hairline);
+
+  --font-sans: var(--font-grotesk);
+
+  --container-content: 73.75rem;
+  --spacing-page: clamp(1.25rem, 5vw, 4rem);
+
+  --radius-button: 0.5rem;
+  --radius-row: 0.625rem;
+  --radius-card: 0.75rem;
+  --radius-pill: 999px;
+
+  --shadow-accent-hover: 0 8px 26px rgb(67 177 255 / 20%);
+  --shadow-card-hover: 0 14px 34px rgb(0 0 0 / 50%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@utility bg-experience {
+  background: var(--bg-grad);
+}
+
+@utility bg-stack {
+  background: var(--bg-stack);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-grotesk), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgb(67 177 255 / 28%);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
