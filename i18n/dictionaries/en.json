@@ -2,6 +2,13 @@
   "intro": {
     "role": "Full-stack developer"
   },
+  "nav": {
+    "label": "Main navigation",
+    "language": "Language",
+    "home": "Home",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Hello world"
   }
