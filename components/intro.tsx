@@ -20,7 +20,7 @@ export function Intro() {
       aria-hidden="true"
       initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: [1, 1, 0], y: [0, 0, -25] }}
-      transition={{ duration: 2, delay: 0.4, times: [0, 0.6, 1], ease: exitEase }}
+      transition={{ duration: 2, delay: 0.4, times: [0, 0.9, 1], ease: exitEase }}
       onAnimationComplete={() => setVisible(false)}
     >
       <div className="text-center">
