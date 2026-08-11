@@ -10,6 +10,8 @@
     "contact": "Kontakt"
   },
   "home": {
-    "title": "Witaj, świecie"
+    "profile": "Projektuję i tworzę aplikacje internetowe zarówno po stronie backendu, jak i frontendu. Pracuję nad produktami od pierwszych decyzji architektonicznych aż po wdrożenie. Swobodnie poruszam się zarówno w systemach opartych na mikroserwisach, jak i w architekturach modulitowych oraz monolitycznych. Z własnej inicjatywy proponuję i wdrażam rozwiązania, które realnie wpływają na stabilność i wydajność produktu.",
+    "experienceCta": "$ docker compose up",
+    "contactCta": "Skontaktuj się"
   }
 }
