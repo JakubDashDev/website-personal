@@ -16,6 +16,7 @@
   --accent: #43b1ff;
   --accent-hover: #8ccfff;
   --accent-deep: #1b6fa8;
+  --secondary: #3b3768;
   --hairline: rgb(234 233 255 / 12%);
 }
 
@@ -33,6 +34,7 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-accent-deep: var(--accent-deep);
+  --color-secondary: var(--secondary);
   --color-hairline: var(--hairline);
 
   --font-sans: var(--font-grotesk);
@@ -57,8 +59,51 @@
   background: var(--bg-stack);
 }
 
+.hero-scroll-track {
+  height: 200svh;
+}
+
+.hero-image-fade {
+  -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 90%);
+  mask-image: radial-gradient(ellipse at center, black 35%, transparent 90%);
+}
+
+.hero-copy-overlap {
+  max-width: 48rem;
+}
+
+.curtain-panel {
+  margin-top: -100svh;
+  box-shadow: 0 -18px 50px rgb(0 0 0 / 45%);
+}
+
+.nav-label {
+  letter-spacing: 0.14em;
+}
+
+.intro-label {
+  letter-spacing: 0.32em;
+}
+
+@media (width >= 64rem) {
+  .hero-copy-overlap {
+    width: calc(100% + 7rem);
+    max-width: none;
+  }
+}
+
+html,
+body {
+  scrollbar-width: none;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 body {
