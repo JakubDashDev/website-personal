@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type NavTheme = 'dark' | 'light';
+export type NavTheme = 'dark' | 'light' | 'primary';
 
 interface NavThemeState {
   activeTheme: NavTheme;

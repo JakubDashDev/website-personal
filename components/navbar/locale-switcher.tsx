@@ -8,11 +8,13 @@ import type { NavTheme } from '@/store/use-nav-theme';
 const activeThemes: Record<NavTheme, string> = {
   dark: 'border-accent text-accent',
   light: 'border-accent-deep text-accent-deep',
+  primary: 'border-white text-white',
 };
 
 const inactiveThemes: Record<NavTheme, string> = {
   dark: 'border-transparent text-text-muted hover:border-accent hover:text-text',
   light: 'border-transparent text-text-dim hover:border-accent-deep hover:text-bg',
+  primary: 'border-transparent text-white/55 hover:border-white hover:text-white',
 };
 
 export function LocaleSwitcher({ activeTheme }: { activeTheme: NavTheme }) {
@@ -30,7 +32,7 @@ export function LocaleSwitcher({ activeTheme }: { activeTheme: NavTheme }) {
 
   return (
     <ul
-      className="flex items-center gap-3 justify-self-end text-sm tracking-[0.14em] uppercase"
+      className="nav-label flex items-center gap-3 justify-self-end text-sm uppercase"
       aria-label={t('language')}
     >
       {routing.locales.map((locale) => {
