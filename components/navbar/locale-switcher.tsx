@@ -6,13 +6,13 @@ import { routing } from '@/i18n/routing';
 import type { NavTheme } from '@/store/use-nav-theme';
 
 const activeThemes: Record<NavTheme, string> = {
-  dark: 'text-white font-bold hover:text-accent',
-  light: 'text-bg hover:text-accent-deep',
+  dark: 'border-accent text-accent',
+  light: 'border-accent-deep text-accent-deep',
 };
 
 const inactiveThemes: Record<NavTheme, string> = {
-  dark: 'text-text-muted hover:text-text',
-  light: 'text-text-dim hover:text-bg',
+  dark: 'border-transparent text-text-muted hover:border-accent hover:text-text',
+  light: 'border-transparent text-text-dim hover:border-accent-deep hover:text-bg',
 };
 
 export function LocaleSwitcher({ activeTheme }: { activeTheme: NavTheme }) {
@@ -39,7 +39,7 @@ export function LocaleSwitcher({ activeTheme }: { activeTheme: NavTheme }) {
         return (
           <li key={locale}>
             <button
-              className={`${isActive ? activeThemes[activeTheme] : inactiveThemes[activeTheme]} cursor-pointer transition-colors`}
+              className={`${isActive ? activeThemes[activeTheme] : inactiveThemes[activeTheme]} cursor-pointer border-b py-1 transition-colors`}
               type="button"
               aria-pressed={isActive}
               onClick={() => switchLocale(locale)}

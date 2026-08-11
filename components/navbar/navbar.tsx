@@ -21,7 +21,7 @@ export function Navbar() {
 
   return (
     <nav
-      className={`${navThemes[activeTheme]} px-page fixed inset-x-0 top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-center py-8 backdrop-blur-[14px] transition-colors duration-500 after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-[linear-gradient(90deg,transparent,var(--accent),transparent)] after:content-['']`}
+      className={`${navThemes[activeTheme]} px-page fixed inset-x-0 top-0 z-50 grid grid-cols-[1fr_auto_1fr] items-center py-8 backdrop-blur-[14px] transition-colors duration-500`}
       aria-label={t('label')}
     >
       <a
