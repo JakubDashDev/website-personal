@@ -17,8 +17,7 @@ export const references = [
     author: 'Piotr Gałaś',
     content:
       'Zdecydowanie polecam Kubę. Dołączył do zespołu jako junior developer, ale już na początku pokazał, że jego doświadczenie i umiejętności są znacznie wyższe. Świetnie zna nodejs, ogarnia zarówno front jak i backend. Jest to programista który pomimo że wspomaga się AI, potrafi pisać kod samodzielnie i rozumie logikę która została wygenerowana. Personalnie, ma te cechy które cenie najbardziej we współpracownikach. Bierze pełną odpowiedzialność za to co robi. Zadania dowozi o początku do końca. Jest dobrym teamplayerem co w moim odczuciu jest nawet ważniejsze niż programowanie.',
-    position:
-      'Co-founder & CTO Shelfio · Full-stack Developer',
+    position: 'Co-founder & CTO Shelfio · Full-stack Developer',
     href: linkedInReferencesUrl,
   },
   {
