@@ -20,9 +20,9 @@ export function Experience() {
       ref={sectionRef}
       id="experience"
       aria-labelledby="experience-heading"
-      className="curtain-panel bg-secondary relative z-10 min-h-svh text-white"
+      className="curtain-panel bg-secondary sticky top-0 z-10 min-h-svh text-white"
     >
-      <div className="bg-secondary px-page sticky top-0 flex min-h-svh items-center pt-28 pb-8 lg:pb-6">
+      <div className="bg-secondary px-page flex min-h-svh items-center pt-28 pb-8 lg:pb-6">
         <div className="w-full">
           <motion.div
             className="mb-8"
