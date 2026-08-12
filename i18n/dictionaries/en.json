@@ -32,6 +32,12 @@
   },
   "technology": {
     "title": "Technologies",
-    "description": "The tools I use to build, ship, and maintain production web applications across the full stack."
+    "description": "The tools I use to build, ship, and maintain production web applications on both the frontend and backend.",
+    "discover": "Scroll to discover more...",
+    "groups": {
+      "languages": "Programming languages",
+      "technologies": "Technologies",
+      "tools": "Tools"
+    }
   }
 }

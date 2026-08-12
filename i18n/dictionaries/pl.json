@@ -32,6 +32,12 @@
   },
   "technology": {
     "title": "Technologie",
-    "description": "Narzędzia, których używam do tworzenia, wdrażania i utrzymywania produkcyjnych aplikacji webowych po obu stronach stosu."
+    "description": "Narzędzia, których używam do tworzenia, wdrażania i utrzymywania produkcyjnych aplikacji webowych zarówno po stronie frontendu, jak i backendu.",
+    "discover": "Przewiń, aby odkryć więcej...",
+    "groups": {
+      "languages": "Języki programowania",
+      "technologies": "Technologie",
+      "tools": "Narzędzia"
+    }
   }
 }
