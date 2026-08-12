@@ -26,7 +26,7 @@ export function Intro() {
       <div className="text-center">
         <div className="overflow-hidden px-0.5">
           <motion.div
-            className="text-text text-7xl leading-none font-medium tracking-tighter"
+            className="text-text text-5xl leading-none font-medium tracking-tighter sm:text-7xl"
             initial={{ opacity: 0, y: '120%', rotate: 3 }}
             animate={{ opacity: 1, y: 0, rotate: 0 }}
             transition={{ duration: 0.9, delay: 0.1, ease: smoothEase }}
@@ -35,7 +35,7 @@ export function Intro() {
           </motion.div>
         </div>
         <motion.div
-          className="via-accent mx-auto mt-5 h-px w-85 origin-left bg-linear-to-r from-transparent to-transparent"
+          className="via-accent mx-auto mt-5 h-px w-64 origin-left bg-linear-to-r from-transparent to-transparent sm:w-85"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: [0, 1, 1] }}
           transition={{ duration: 1.5, delay: 0.35, times: [0, 0.55, 1], ease: exitEase }}

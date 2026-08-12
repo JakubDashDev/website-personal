@@ -7,7 +7,7 @@ export function Hero() {
 
   return (
     <section id="home" className="hero-scroll-track relative">
-      <div className="bg-bg px-page sticky top-0 grid h-svh content-center items-center gap-12 overflow-hidden py-24 lg:grid-cols-2 lg:gap-16 lg:py-32">
+      <div className="bg-bg px-page sticky top-0 grid h-svh content-center items-center gap-12 overflow-x-hidden pt-32 pb-8 lg:grid-cols-2 lg:gap-16 lg:overflow-hidden lg:py-32">
         <Image
           src={heroImage}
           alt=""
@@ -15,7 +15,9 @@ export function Hero() {
           sizes="(min-width: 1024px) 45vw, 1px"
         />
         <div>
-          <h1 className="text-8xl leading-none font-medium tracking-tighter">Jakub Cieślik</h1>
+          <h1 className="text-5xl leading-none font-medium tracking-tighter sm:text-6xl lg:text-8xl">
+            Jakub Cieślik
+          </h1>
           <p className="hero-copy-overlap text-text-body relative z-10 mt-6 text-lg leading-8 lg:mt-8">
             {t('profile')}
           </p>

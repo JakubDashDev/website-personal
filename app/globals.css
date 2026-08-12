@@ -72,11 +72,6 @@
   max-width: 48rem;
 }
 
-.curtain-panel {
-  margin-top: -100svh;
-  box-shadow: 0 -18px 50px rgb(0 0 0 / 45%);
-}
-
 .nav-label {
   letter-spacing: 0.14em;
 }
