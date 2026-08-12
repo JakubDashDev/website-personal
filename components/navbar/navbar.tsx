@@ -7,8 +7,14 @@ import { NavLinks } from './nav-links';
 
 const navThemes: Record<NavTheme, string> = {
   dark: 'bg-bg/85',
-  light: 'bg-band-light/90',
+  light: 'bg-transparent',
   primary: 'bg-transparent',
+};
+
+const borderThemes: Record<NavTheme, string> = {
+  dark: 'border-white/15',
+  light: 'border-black/10',
+  primary: 'border-white/15',
 };
 
 const logoThemes: Record<NavTheme, string> = {
@@ -20,11 +26,11 @@ const logoThemes: Record<NavTheme, string> = {
 export function Navbar() {
   const t = useTranslations('nav');
   const activeTheme = useNavTheme((state) => state.activeTheme);
-  const activeSection = activeTheme === 'primary' ? 'experience' : 'home';
+  const activeSection = activeTheme === 'dark' ? 'home' : 'experience';
 
   return (
     <nav
-      className={`${navThemes[activeTheme]} px-page fixed inset-x-0 top-0 z-50 grid grid-cols-3 items-center border-b border-white/15 py-8 backdrop-blur-md transition-colors duration-500`}
+      className={`${navThemes[activeTheme]} ${borderThemes[activeTheme]} px-page fixed inset-x-0 top-0 z-50 grid grid-cols-3 items-center border-b py-8 backdrop-blur-md transition-colors duration-500`}
       aria-label={t('label')}
     >
       <a

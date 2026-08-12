@@ -39,5 +39,10 @@
       "technologies": "Technologies",
       "tools": "Tools"
     }
+  },
+  "references": {
+    "title": "References",
+    "linkedInLabel": "View references on LinkedIn",
+    "contactCta": "Let's build something together"
   }
 }
