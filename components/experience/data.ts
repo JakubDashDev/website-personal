@@ -5,6 +5,8 @@ export const experiences = [
   {
     id: 'shelfio',
     href: linkedInExperienceUrl,
+    start: { year: 2025, month: 10 },
+    end: null,
     stack: [
       'TypeScript',
       'React',
@@ -23,6 +25,8 @@ export const experiences = [
   {
     id: 'sitebell',
     href: linkedInExperienceUrl,
+    start: { year: 2025, month: 8 },
+    end: { year: 2025, month: 10 },
     stack: ['TypeScript', 'React', 'Tailwind CSS', 'Next.js', 'Docker', 'Linux', 'GitLab'],
   },
 ] as const;

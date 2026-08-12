@@ -16,16 +16,16 @@
   },
   "experience": {
     "title": "Doświadczenie",
-    "description": "Rozwijam aplikacje webowe po stronie backendu i frontendu. Pracuję głównie na systemach działających już w produkcji: dodaję nowe funkcje, refaktoryzuję istniejący kod i dbam o to, żeby całość działała stabilnie. Współtworzyłem produkt od pierwszych decyzji architektonicznych po wdrożenie. Programuję od pięciu lat, z czego od roku komercyjnie.",
+    "description": "Rozwijam aplikacje webowe po stronie backendu i frontendu. Pracuję głównie na systemach działających już w produkcji: dodaję nowe funkcje, refaktoryzuję istniejący kod i dbam o to, żeby całość działała stabilnie. Współtworzyłem produkt od pierwszych decyzji architektonicznych po wdrożenie. Programuję od pięciu lat.",
+    "present": "obecnie",
+    "totalExperience": "{duration} doświadczenia komercyjnego",
     "shelfio": {
       "company": "Shelfio",
-      "dates": "10.2025 - obecnie",
       "title": "Full-stack software developer",
       "body": "Odpowiadam za utrzymanie i rozwój obszarów kluczowych dla funkcjonowania sklepów oraz innych istotnych funkcjonalności. Rozwijam również aplikacje webowe tworzące wspólną warstwę produktową dla autonomicznych sklepów i siłowni. Z własnej inicjatywy wprowadziłem zmiany, które poprawiły wydajność i UX. Pracuję także nad architekturą poszczególnych serwisów."
     },
     "sitebell": {
       "company": "SiteBell",
-      "dates": "08.2025 - 10.2025",
       "title": "Front-end developer · staż",
       "body": "Odpowiadałem za tworzenie i wdrażanie nowych komponentów UI. Brałem udział w codziennych spotkaniach zespołu oraz proponowałem i budowałem własne rozwiązania, które miały realny wpływ na ostateczny wygląd produktu."
     }
