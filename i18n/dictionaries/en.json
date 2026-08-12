@@ -16,18 +16,22 @@
   },
   "experience": {
     "title": "Experience",
-    "description": "I develop web applications across both backend and frontend. I mainly work on systems already running in production: adding new features, refactoring existing code, and ensuring the whole system remains stable. I have co-created a product from the first architectural decisions through deployment. I have been programming for five years.",
+    "description": "I develop web applications across both backend and frontend. I mainly work on systems already running in production: adding new features, refactoring existing code, and ensuring the whole system remains stable. I have co-created a product from the first architectural decisions through deployment. I have been programming for five years, including one year professionally.",
     "present": "present",
     "totalExperience": "{duration} of professional experience",
     "shelfio": {
       "company": "Shelfio",
       "title": "Full-stack software developer",
-      "body": "I'm responsible for maintaining and developing areas critical to store operations, along with other key functionality. I also develop web applications that form a shared product layer for autonomous stores and gyms. On my own initiative, I introduced changes that improved performance and UX. I also work on the architecture of individual services."
+      "body": "I'm responsible for maintaining and developing areas critical to store operations, along with other key functionality. I also build web applications that form a shared product layer for autonomous stores and gyms. On my own initiative, I introduced changes that improved performance and UX. I design, build and develop individual services."
     },
     "sitebell": {
       "company": "SiteBell",
       "title": "Front-end developer · internship",
       "body": "I was responsible for developing and shipping new UI components. I took part in daily team meetings and proposed and built my own solutions, which had a real impact on the final look of the product."
     }
+  },
+  "technology": {
+    "title": "Technologies",
+    "description": "The tools I use to build, ship, and maintain production web applications across the full stack."
   }
 }
