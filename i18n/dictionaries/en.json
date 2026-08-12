@@ -5,6 +5,8 @@
   "nav": {
     "label": "Main navigation",
     "language": "Language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
     "home": "Home",
     "experience": "Experience",
     "contact": "Contact"

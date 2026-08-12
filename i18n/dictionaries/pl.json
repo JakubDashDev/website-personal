@@ -5,6 +5,8 @@
   "nav": {
     "label": "Główna nawigacja",
     "language": "Język",
+    "openMenu": "Otwórz menu",
+    "closeMenu": "Zamknij menu",
     "home": "Strona główna",
     "experience": "Doświadczenie",
     "contact": "Kontakt"
