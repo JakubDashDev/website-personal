@@ -133,7 +133,7 @@ export const references = [
     position: 'Co-Founder Sybilia.pl · Front-end Developer',
     href: linkedInReferencesUrl,
   },
-]
+];
 
 export const contactEmail = 'jakubdashdev@gmail.com';
 
