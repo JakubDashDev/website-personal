@@ -1,3 +1,4 @@
+import { Contact } from '@/components/contact/contact';
 import { Experience } from '@/components/experience/experience';
 import { Hero } from '@/components/hero';
 import { Intro } from '@/components/intro';
@@ -15,6 +16,7 @@ export default function Home() {
         <Experience />
         <Technology />
         <References />
+        <Contact />
       </main>
     </>
   );

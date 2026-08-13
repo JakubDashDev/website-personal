@@ -46,5 +46,26 @@
     "title": "Referencje",
     "linkedInLabel": "Zobacz referencje na LinkedIn",
     "contactCta": "Zbudujmy coś razem"
+  },
+  "contact": {
+    "title": "Skontaktuj się",
+    "description": "Skorzystaj z formularza poniżej lub napisz do mnie przez LinkedIn albo GitHub.",
+    "name": "Imię i nazwisko",
+    "namePlaceholder": "Twoje imię i nazwisko",
+    "email": "Email",
+    "businessEmail": "Email biznesowy",
+    "emailPlaceholder": "ty@example.com",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Kilka słów o projekcie lub propozycji...",
+    "send": "Wyślij wiadomość",
+    "sending": "Wysyłanie...",
+    "success": "Dziękuję za kontakt. Odpowiem tak szybko, jak to możliwe.",
+    "error": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "downloadCv": "Pobierz CV",
+    "errors": {
+      "name": "Wpisz swoje imię i nazwisko.",
+      "email": "Wpisz poprawny adres email.",
+      "message": "Wpisz wiadomość."
+    }
   }
 }
