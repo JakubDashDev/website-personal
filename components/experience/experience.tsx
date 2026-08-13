@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { ContentContainer } from '@/components/content-container';
 import { ExternalLinkButton } from '@/components/external-link-button';
-import { experiences } from './data';
+import { experiences } from '@/data';
 import { useExperienceDates, useExperienceMotion } from './hooks';
 
 const revealItem = {

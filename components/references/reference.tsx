@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ExternalLinkButton } from '@/components/external-link-button';
-import type { Reference as ReferenceData } from './data';
+import type { Reference as ReferenceData } from '@/data';
 
 export const referenceReveal = {
   hidden: { opacity: 0, y: 18 },

@@ -4,7 +4,7 @@ import { motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { PiArrowDownLight } from 'react-icons/pi';
 import { ContentContainer } from '@/components/content-container';
-import { references } from './data';
+import { references } from '@/data';
 import { useReferencesTheme } from './hooks';
 import { Reference, referenceReveal } from './reference';
 
@@ -17,9 +17,8 @@ export function References() {
       sectionRef={sectionRef}
       id="references"
       aria-labelledby="references-heading"
-      className="z-30 min-h-svh bg-[#f4f4f4] text-[#171717]"
+      className="z-30 h-[200svh] bg-[#f4f4f4] text-[#171717]"
       contentClassName="px-page flex min-h-svh flex-col pt-28 pb-6"
-      fitContent
     >
       <motion.div
         initial="hidden"

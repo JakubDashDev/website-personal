@@ -30,6 +30,7 @@ export function useReferencesTheme() {
   useThemeTrigger({
     scrollProgress: sectionProgress,
     setThemeAtProgress: 0,
+    disableThemeAtProgress: 0.48,
     theme: 'light',
   });
 

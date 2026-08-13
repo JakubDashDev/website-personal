@@ -1,7 +1,7 @@
 'use client';
 
 import { useParams, usePathname, useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useIsMobile } from '@/hooks/use-media-query';
 import { useNavTheme } from '@/store/use-nav-theme';
 
@@ -9,7 +9,25 @@ export function useNavbar() {
   const activeTheme = useNavTheme((state) => state.activeTheme);
   const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const activeSection: 'home' | 'experience' = activeTheme === 'dark' ? 'home' : 'experience';
+  const [isContactActive, setIsContactActive] = useState(false);
+  const activeSection: 'home' | 'experience' | 'contact' = isContactActive
+    ? 'contact'
+    : activeTheme === 'dark'
+      ? 'home'
+      : 'experience';
+
+  useEffect(() => {
+    const contactSection = document.getElementById('contact');
+    if (!contactSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsContactActive(entry.isIntersecting),
+      { rootMargin: '-40% 0px' }
+    );
+
+    observer.observe(contactSection);
+    return () => observer.disconnect();
+  }, []);
 
   return {
     activeTheme,
