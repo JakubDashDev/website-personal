@@ -1,4 +1,4 @@
-import type { TechnologyItem } from './data';
+import type { TechnologyItem } from '@/data';
 
 export function TechnologyIcon({ label, icon: Icon, color }: TechnologyItem) {
   return (

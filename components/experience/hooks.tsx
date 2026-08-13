@@ -1,8 +1,8 @@
 import { useMotionValueEvent, useReducedMotion, useScroll } from 'motion/react';
 import { useLocale } from 'next-intl';
 import { useRef, useState } from 'react';
+import { experiences } from '@/data';
 import { useThemeTrigger } from '@/hooks/use-theme-trigger';
-import { experiences } from './data';
 
 type ExperienceMonth = { year: number; month: number };
 

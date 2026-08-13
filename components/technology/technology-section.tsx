@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import type { TechnologyItem } from './data';
+import type { TechnologyItem } from '@/data';
 import { TechnologyIcon } from './technology-icon';
 
 export const revealItem = {

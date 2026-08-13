@@ -21,12 +21,13 @@ export function NavLinks({
   onNavigate,
 }: {
   activeTheme: NavTheme;
-  activeSection: 'home' | 'experience';
+  activeSection: 'home' | 'experience' | 'contact';
   onNavigate: () => void;
 }) {
   const t = useTranslations('nav');
   const homeIsActive = activeSection === 'home';
   const experienceIsActive = activeSection === 'experience';
+  const contactIsActive = activeSection === 'contact';
 
   return (
     <div className="nav-label flex flex-wrap items-center justify-center gap-4 justify-self-center text-xs uppercase lg:gap-8 lg:text-sm">
@@ -47,8 +48,9 @@ export function NavLinks({
         {t('experience')}
       </a>
       <a
-        className={`${linkThemes[activeTheme]} border-b border-transparent py-1 transition-colors`}
+        className={`${contactIsActive ? activeLinkThemes[activeTheme] : `${linkThemes[activeTheme]} border-transparent`} border-b py-1 transition-colors`}
         href="#contact"
+        aria-current={contactIsActive ? 'location' : undefined}
         onClick={onNavigate}
       >
         {t('contact')}

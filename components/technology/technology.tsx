@@ -3,7 +3,7 @@
 import { motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import { ContentContainer } from '@/components/content-container';
-import { technologyGroups } from './data';
+import { technologyGroups } from '@/data';
 import { useTechnologyMotion } from './hooks';
 import { revealItem, TechnologySection } from './technology-section';
 
