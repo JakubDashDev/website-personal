@@ -17,7 +17,7 @@ export function Technology() {
       id="technology"
       aria-labelledby="technology-heading"
       className="z-20 h-[300svh] bg-black text-white"
-      contentClassName="px-page flex min-h-svh items-start bg-black pt-28 pb-8 lg:items-center lg:pt-24"
+      contentClassName="px-page flex min-h-svh items-start bg-black pt-32 pb-8 lg:items-center"
     >
       <div className="w-full">
         <motion.div

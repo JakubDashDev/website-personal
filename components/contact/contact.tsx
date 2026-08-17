@@ -24,7 +24,7 @@ export function Contact() {
       id="contact"
       aria-labelledby="contact-heading"
       className="bg-bg z-40 min-h-svh text-white"
-      contentClassName="bg-bg px-page flex min-h-svh flex-col pt-28 pb-8"
+      contentClassName="bg-bg px-page flex min-h-svh flex-col pt-28 pb-4"
       fitContent
     >
       <div className="flex w-full flex-1 items-start lg:items-center">
@@ -95,7 +95,7 @@ export function Contact() {
           </div>
         </div>
       </div>
-      <footer className="text-text-muted mt-12 w-full text-center text-xs">
+      <footer className="text-text-muted w-full text-center text-xs">
         © {new Date().getFullYear()} Jakub Cieślik
       </footer>
     </ContentContainer>
