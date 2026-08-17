@@ -13,7 +13,7 @@ export function Hero() {
           alt=""
           className="hero-image-fade order-2 hidden w-full mix-blend-screen lg:block"
           sizes="(min-width: 1024px) 45vw, 1px"
-          loading='eager'
+          loading="eager"
         />
         <div>
           <h1 className="text-5xl leading-none font-medium tracking-tighter sm:text-6xl lg:text-8xl">
