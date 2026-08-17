@@ -1,0 +1,9 @@
+services:
+  website:
+    build: .
+    container_name: jakubdashdev-site
+    restart: unless-stopped
+    env_file: .env
+    command: node server.js
+    ports:
+      - '3000:3000'
