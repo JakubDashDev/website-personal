@@ -18,7 +18,7 @@ export function References() {
       id="references"
       aria-labelledby="references-heading"
       className="z-30 h-[200svh] bg-[#f4f4f4] text-[#171717]"
-      contentClassName="px-page flex min-h-svh flex-col pt-28 pb-6"
+      contentClassName="px-page flex min-h-svh flex-col pt-32 pb-20"
     >
       <motion.div
         initial="hidden"

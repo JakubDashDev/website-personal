@@ -2,7 +2,6 @@
 
 import type { ComponentPropsWithoutRef, Ref } from 'react';
 import { useEffect, useRef } from 'react';
-import { useIsMobile } from '@/hooks/use-media-query';
 
 type ContentContainerProps = ComponentPropsWithoutRef<'section'> & {
   sectionRef?: Ref<HTMLElement>;
@@ -19,7 +18,6 @@ export function ContentContainer({
   ...props
 }: ContentContainerProps) {
   const contentRef = useRef<HTMLDivElement>(null);
-  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (fitContent) return;
@@ -29,30 +27,27 @@ export function ContentContainer({
     if (!content || !container) return;
 
     const updateLayout = () => {
-      if (isMobile) {
-        container.style.height = `calc(${content.offsetHeight}px + 100svh)`;
-        content.style.top = `min(0px, calc(100svh - ${content.offsetHeight}px))`;
-      } else {
-        container.style.height = '';
-        content.style.top = '';
-      }
+      container.style.minHeight = `calc(${content.offsetHeight}px + 100svh)`;
+      content.style.top = `min(0px, calc(100svh - ${content.offsetHeight}px))`;
     };
     const observer = new ResizeObserver(updateLayout);
 
     observer.observe(content);
+    window.addEventListener('resize', updateLayout);
     updateLayout();
 
     return () => {
       observer.disconnect();
-      container.style.height = '';
+      window.removeEventListener('resize', updateLayout);
+      container.style.minHeight = '';
       content.style.top = '';
     };
-  }, [fitContent, isMobile]);
+  }, [fitContent]);
 
   return (
     <section
       ref={sectionRef}
-      className={`relative -mt-[100svh] shadow-[0_-18px_50px_rgb(0_0_0_/_45%)] ${className}`}
+      className={`relative mt-[-100svh] shadow-[0_-18px_50px_rgb(0_0_0/45%)] ${className}`}
       {...props}
     >
       <div

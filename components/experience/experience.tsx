@@ -23,7 +23,7 @@ export function Experience() {
       id="experience"
       aria-labelledby="experience-heading"
       className="bg-secondary z-10 h-[200svh] text-white"
-      contentClassName="bg-secondary px-page flex min-h-svh items-start pt-28 pb-8 lg:items-center lg:pb-6"
+      contentClassName="bg-secondary px-page flex min-h-svh items-start pt-32 pb-20 lg:items-center"
     >
       <div className="w-full">
         <motion.div
